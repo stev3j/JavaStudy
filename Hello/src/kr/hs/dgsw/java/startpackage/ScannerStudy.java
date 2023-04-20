@@ -1,7 +1,6 @@
-package kr.hs.dgsw.java;
+package kr.hs.dgsw.java.startpackage;
 
 
-import java.io.File;
 import java.util.Scanner;
 
 public class ScannerStudy {
