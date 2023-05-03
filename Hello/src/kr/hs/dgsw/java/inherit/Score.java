@@ -1,3 +1,4 @@
+
 package kr.hs.dgsw.java.inherit;
 
 import java.util.Date;
@@ -45,7 +46,6 @@ public class Score {
         System.out.println(score1.equals(null));
 
 
-
     }
 
     @Override
@@ -59,6 +59,6 @@ public class Score {
         if (!(obj instanceof Score)) {
             return false;
         }
-        return (getGrade() == ((Score)obj).getGrade());
+        return (getGrade() == ((Score) obj).getGrade());
     }
 }

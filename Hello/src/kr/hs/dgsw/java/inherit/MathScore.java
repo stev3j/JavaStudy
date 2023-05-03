@@ -9,8 +9,8 @@ public class MathScore extends Score {
     @Override
     public String getGrade() {
         return switch (point / 10) {
-            case 10,9 -> "수";
-            case 8,7,6 -> "우";
+            case 10, 9 -> "수";
+            case 8, 7, 6 -> "우";
             case 5 -> "미";
             case 4 -> "양";
             default -> "가";
