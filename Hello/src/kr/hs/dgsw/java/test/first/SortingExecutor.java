@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-// 실수해서 soft 했는데
+// 실수해서 soft 했는데 다시 푸시했더니 충돌나는 경우는 왜 그러는겨?
 
 public class SortingExecutor {
 
