@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
+// 실수해서 soft 했는데
+
 public class SortingExecutor {
 
     private static final int SAMPLE_DATA_SIZE = 10000;
