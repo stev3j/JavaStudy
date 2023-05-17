@@ -10,19 +10,18 @@ public class SortingExecutor {
 
     private static final int SAMPLE_DATA_SIZE = 10000;
 
-    private final Scanner scanner;
-
     private final SelectionSort selectionSort;
 
     private int[] sampleData;
 
     private long elapsedTime;
 
+    /* 생성자 */
     public SortingExecutor() {
-        this.scanner = new Scanner(System.in);
         this.selectionSort = new SelectionSort();
     }
 
+    /* 리스트 생성 */
     public void makeSampleData() {
         this.sampleData = new int[SAMPLE_DATA_SIZE];
         Random random = new Random();
@@ -32,25 +31,20 @@ public class SortingExecutor {
         }
     }
 
+    /* 선택 정렬 */
     public int[] doSorting() {
         long start = System.currentTimeMillis();
         int[] sorted = selectionSort.sort(this.sampleData);
         long end = System.currentTimeMillis();
 
-        this.elapsedTime = end - start;
+        this.elapsedTime = end - start; // 경과 시간
 
         return sorted;
     }
 
+    /* 경과 시간 */
     public void printElapsedTime() {
         System.out.printf("%d개의 자료를 정렬하는데 %d(ms)의 시간이 경과했습니다.\n", this.sampleData.length, this.elapsedTime);
-    }
-
-
-    public void close() {
-        if (this.scanner != null) {
-            this.scanner.close();
-        }
     }
 
     public static void main(String[] args) {
@@ -62,8 +56,6 @@ public class SortingExecutor {
         System.out.println("정렬후 : " + Arrays.toString(sorted));
 
         executor.printElapsedTime();
-
-        executor.close();
     }
 
 }

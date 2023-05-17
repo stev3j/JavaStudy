@@ -7,6 +7,11 @@ public class Dog implements Soundable {
         System.out.println("멍멍!");
     }
 
+    @Override
+    public void hello() {
+
+    }
+
     public static void main(String[] args) {
         Dog doge = new Dog();
         doge.makeSound();
