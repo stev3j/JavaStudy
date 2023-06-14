@@ -45,6 +45,13 @@ public class SmartFileReader {
         for(int i = 0; i < length; i++) {
             result[i + offset] = buffer[i];
         }
+    }
 
+    public static void main(String[] args) throws Exception {
+        File file = new File("C:/Users/user/Desktop/java_study/java_text.txt");
+        SmartFileReader smartFileReader = new SmartFileReader();
+        byte[] bytes = smartFileReader.readFile(file);
+        String str = new String(bytes);
+        System.out.println(str);
     }
 }

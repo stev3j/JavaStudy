@@ -10,10 +10,10 @@ public class MyFileCopier {
         OutputStream os = null;
 
         try {
-            os = new FileOutputStream(file);
-            byte[] bytes = content.getBytes(); // toByte
+//            os = new FileOutputStream(file);
+//            byte[] bytes = content.getBytes(); // toByte
 
-            os.write(bytes);
+//            os.write(bytes);
             os.flush();
 
         } catch (Exception e) {
