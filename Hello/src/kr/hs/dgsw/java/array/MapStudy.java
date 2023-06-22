@@ -37,8 +37,6 @@ public class MapStudy {
         System.out.println(values);
 
         Collection<String> values2 = map.values();
-        
-
     }
 
     public static List<String> getValues(Map<Integer, String> map) {
